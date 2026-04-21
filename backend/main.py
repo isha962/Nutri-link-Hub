@@ -1,4 +1,5 @@
 import json
+import os
 from pathlib import Path
 
 from fastapi import FastAPI
@@ -8,6 +9,17 @@ from pydantic import BaseModel
 
 BASE_DIR = Path(__file__).resolve().parent
 SAMPLE_PATH = BASE_DIR / "sample_benchmark.json"
+
+
+def get_allowed_origins() -> list[str]:
+    raw_origins = os.getenv("BACKEND_CORS_ORIGINS", "")
+    if raw_origins.strip():
+        return [origin.strip() for origin in raw_origins.split(",") if origin.strip()]
+
+    return [
+        "http://127.0.0.1:3000",
+        "http://localhost:3000",
+    ]
 
 
 class BenchmarkTask(BaseModel):
@@ -24,7 +36,7 @@ app = FastAPI(title="EvalForge API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://127.0.0.1:3000", "http://localhost:3000"],
+    allow_origins=get_allowed_origins(),
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
