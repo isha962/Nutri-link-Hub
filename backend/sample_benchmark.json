@@ -1,0 +1,47 @@
+[
+  {
+    "id": "T-101",
+    "task": "Summarize a support ticket and label the priority.",
+    "expected_behavior": "Return a concise summary and assign medium priority with a reason."
+  },
+  {
+    "id": "T-102",
+    "task": "Draft a refund response for a delayed shipment.",
+    "expected_behavior": "Acknowledge the delay, cite the 7-day refund window, and avoid promising instant approval."
+  },
+  {
+    "id": "T-103",
+    "task": "Convert a user request into a two-step troubleshooting plan.",
+    "expected_behavior": "Provide exactly two steps and keep the tone neutral."
+  },
+  {
+    "id": "T-104",
+    "task": "Turn a paragraph into a JSON object with title and bullets.",
+    "expected_behavior": "Return valid JSON with a title string and a bullets array."
+  },
+  {
+    "id": "T-105",
+    "task": "Answer a policy question about account deletion timing.",
+    "expected_behavior": "State that deletion completes within 30 days and do not invent exceptions."
+  },
+  {
+    "id": "T-106",
+    "task": "Classify a lead as inbound or outbound based on the note.",
+    "expected_behavior": "Return one label and a one-sentence rationale."
+  },
+  {
+    "id": "T-107",
+    "task": "Rewrite a chatbot reply to sound more empathetic.",
+    "expected_behavior": "Keep the same meaning, reduce jargon, and add one empathic phrase."
+  },
+  {
+    "id": "T-108",
+    "task": "Answer a question using two retrieved snippets that disagree.",
+    "expected_behavior": "Call out the disagreement before answering and prefer the newer snippet."
+  },
+  {
+    "id": "T-109",
+    "task": "Generate a JSON response for a tool call.",
+    "expected_behavior": "Return valid JSON with keys action, target, and confidence."
+  }
+]
