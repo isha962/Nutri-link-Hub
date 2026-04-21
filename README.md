@@ -1,6 +1,9 @@
 # EvalForge
 
-Tiny local MVP for testing and debugging mock agent workflows.
+A lightweight eval debugger for agent workflows.
+
+**Live Demo:** https://evalforge-bice.vercel.app  
+**GitHub Repo:** https://github.com/isha962/evalforge
 
 ## What it does
 
