@@ -32,7 +32,7 @@ Tailwind CSS
 
 ## Live Demo
 
-(link)
+https://nutri-link-hub.vercel.app/
 
 ## Case Study
 
