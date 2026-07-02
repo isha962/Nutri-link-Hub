@@ -4,8 +4,8 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 export const metadata: Metadata = {
-  title: "EvalForge",
-  description: "Tiny local eval workbench for debugging agent workflows.",
+  title: "NutriLink Hub | Portfolio Case Study",
+  description: "A polished one-page product case study for NutriLink Hub, focused on NYC senior nutrition access.",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
