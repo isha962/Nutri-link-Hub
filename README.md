@@ -34,6 +34,4 @@ Tailwind CSS
 
 https://nutri-link-hub.vercel.app/
 
-## Case Study
 
-(link)
